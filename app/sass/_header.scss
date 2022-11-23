@@ -1,0 +1,44 @@
+.header {
+    &__info {
+        &__info-list {
+            &__info-link {
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 15px;
+                text-align: center;
+                letter-spacing: 1px;
+                color: #B3B3BA;
+            }
+        }
+        &__info-adress {
+            font-size: 16px;
+            line-height: 20px;
+            text-align: right;
+            color: #B3B3BA;
+        }
+        &__info-phone {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: right;
+            color: #B3B3BA;
+        }
+    }
+    &__logo {
+
+        }
+    &__menu {
+
+    }
+}
+
+// .header__info-link {
+//     font-weight: 700;
+//     font-size: 12px;
+//     line-height: 15px;
+//     text-align: center;
+//     letter-spacing: 1px;
+//     color: #B3B3BA;
+// }
+
+
