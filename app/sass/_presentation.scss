@@ -1,0 +1,105 @@
+.presentation {
+    padding-bottom: 30px;
+    &__list {
+        padding-left: 0;
+        list-style: none;
+        display: flex;
+        overflow: auto;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        margin-bottom: 30px;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+    &__item {
+        cursor: pointer;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 37px;
+        color: #B3B3BA;
+        white-space: nowrap;
+        background-color: transparent;
+        border: none;
+        margin-right: 30px;
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+    &__item.active {
+        background: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+    &__content {
+        display: none;
+        &-title {
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 24px;
+            color: #FFFFFF;
+            padding-top: 30px;
+            margin-bottom: 30px;
+
+        }
+        &-subtitle {
+            font-size: 19px;
+            line-height: 30px;
+            color: #FFFFFF;
+        }
+    }
+    &__content.active {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        border-top: 4px solid rgba(255, 255, 255, 0.3);
+    }
+}
+
+// -------------------------------------------------------------------------------------
+// ----------------------------------------------------------------media 768------------
+// -------------------------------------------------------------------------------------
+
+@media (min-width: 768px) {
+
+    .presentation {
+        padding-bottom: 60px;
+        &__item {
+            font-size: 38px;
+            line-height: 46px;
+        }
+        &__content-title {
+            font-size: 30px;
+            line-height: 37px;
+        }
+        &__content-subtitle {
+            font-size: 19px;
+            line-height: 30px;
+        }
+    }
+}
+
+// -------------------------------------------------------------------------------------
+// ----------------------------------------------------------------media 992------------
+// -------------------------------------------------------------------------------------
+
+@media (min-width: 992px) {
+    .presentation {
+        display: flex;
+        &__list {
+            width: 40%;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+        &__content.active {
+            width: 60%;
+            border-top: none;
+            padding-left: 60px;
+            border-left: 4px solid rgba(255, 255, 255, 0.3);
+        }
+        &__content-title {
+            padding-top: 0;
+        }
+    }
+}
