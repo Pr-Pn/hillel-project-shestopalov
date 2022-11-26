@@ -96,8 +96,6 @@
             line-height: 20px;
             text-align: right;
             color: #B3B3BA;
-            position: relative;
-            z-index: 2;
             &_d {
                 color: #FFFFFF;
             }
@@ -277,6 +275,7 @@
                 }
             }
             &-phone {
+                display: block;
                 margin-left: 18px;
                 &::after {
                     content: '';
