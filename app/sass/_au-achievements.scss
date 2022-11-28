@@ -1,0 +1,53 @@
+.au-achievements {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    &__section {
+        background-color: #F5F5FA;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #323264;
+        margin-bottom: 30px;
+    }
+    &__cards {
+        margin: 0 -15px;
+    }
+    &__card {
+        display: grid;
+        grid-template-columns: 1fr;
+        &_none {
+            display: none;
+        }
+    }
+    &__item {
+        width: calc(100% - 60px);
+        height: 90px;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    &__logo {
+        max-width: 135px;
+    }
+}
+
+@media (min-width: 576px) {
+    .au-achievements {
+        &__card {
+            display: grid;
+            grid-template-columns: 1fr;
+            &_none {
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+}
+

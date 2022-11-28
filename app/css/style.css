@@ -5,10 +5,17 @@
 }
 
 .container {
+  max-width: 1080px;
+  min-width: 375px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.container-lg {
   max-width: 1320px;
   min-width: 375px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 30px;
 }
 
 a {
@@ -71,6 +78,7 @@ a {
   grid-template-rows: -webkit-min-content -webkit-min-content;
   grid-template-rows: min-content min-content;
   position: relative;
+  margin: 0 -15px;
 }
 
 .header__info {
@@ -454,6 +462,7 @@ a {
 }
 
 .footer {
+  border-top: 2px solid #E6E6F0;
   background-color: #F5F5FA;
 }
 
@@ -465,7 +474,6 @@ a {
   justify-items: center;
   padding-top: 32px;
   padding-bottom: 30px;
-  border-top: 2px solid #E6E6F0;
 }
 
 .footer__adress {
@@ -1278,6 +1286,291 @@ a {
   }
   .publication__card {
     width: 33.333%;
+  }
+}
+
+.au-presentation {
+  padding: 30px 0;
+}
+
+.au-presentation__title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.au-presentation__subtitle {
+  font-size: 19px;
+  line-height: 30px;
+  padding-bottom: 30px;
+}
+
+.au-presentation__data {
+  border-left: 4px solid #E6E6F0;
+  padding-left: 30px;
+}
+
+.au-presentation__item {
+  margin-bottom: 40px;
+}
+
+.au-presentation__item-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.au-presentation__item-logo {
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 32px;
+  height: 32px;
+  position: relative;
+  margin-bottom: 10px;
+  margin-right: 12px;
+}
+
+.au-presentation__item-txt {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.au-presentation__item-info {
+  font-size: 16px;
+  line-height: 20px;
+  color: #323264;
+}
+
+.au-presentation__item-last {
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .au-presentation {
+    padding-bottom: 60px;
+  }
+  .au-presentation__title {
+    font-size: 38px;
+    line-height: 46px;
+  }
+}
+
+@media (min-width: 992px) {
+  .au-presentation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .au-presentation__txt {
+    width: 60%;
+    padding-right: 30px;
+  }
+  .au-presentation__data {
+    width: 40%;
+  }
+}
+
+.au-photo__section {
+  display: block;
+  background-image: url("../img/au-photo-s.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 114px;
+  background-size: cover;
+  position: relative;
+}
+
+.au-photo__txt {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  text-align: center;
+  letter-spacing: 13px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  opacity: 0.8;
+  text-shadow: 0px 15px 30px rgba(40, 40, 86, 0.8);
+  position: absolute;
+  width: 148px;
+  height: 44px;
+  left: calc(50% - 148px/2);
+  top: calc(50% - 44px/2 - 0.03px);
+}
+
+@media (min-width: 768px) {
+  .au-photo__section {
+    height: 233px;
+    background-size: cover 233px;
+  }
+  .au-photo__txt {
+    font-size: 46px;
+    line-height: 56px;
+    letter-spacing: 63px;
+    width: 328px;
+    height: 56px;
+    left: calc(50% - 328px/2);
+    top: calc(50% - 56px/2 + 0.2px);
+  }
+}
+
+@media (min-width: 992px) {
+  .au-photo__section {
+    height: 311px;
+    background-size: cover 311px;
+    background-image: url("../img/au-photo.jpg");
+  }
+  .au-photo__txt {
+    font-size: 86px;
+    line-height: 105px;
+    width: 448px;
+    height: 105px;
+    left: calc(50% - 448px/2);
+    top: calc(50% - 105px/2 - 0.23px);
+  }
+}
+
+@media (min-width: 1200px) {
+  .au-photo__section {
+    height: 438px;
+    background-size: cover 438px;
+    background-image: url("../img/au-photo-l.jpg");
+  }
+  .au-photo__txt {
+    font-size: 96px;
+    line-height: 117px;
+    width: 478px;
+    height: 117px;
+    left: calc(50% - 478px/2);
+    top: calc(50% - 117px/2 + 2.5px);
+  }
+}
+
+.au-history__section {
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+
+.au-history__txt {
+  font-size: 19px;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+.au-history__subtitle {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+@media (min-width: 768px) {
+  .au-history__section {
+    padding-top: 60px;
+  }
+  .au-history__subtitle {
+    font-size: 38px;
+    line-height: 46px;
+  }
+}
+
+@media (min-width: 992px) {
+  .au-history__section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .au-history__txt {
+    padding-right: 60px;
+  }
+  .au-history__subtitle {
+    display: block;
+    width: 410px;
+    height: 138px;
+  }
+}
+
+.au-achievements {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.au-achievements__section {
+  background-color: #F5F5FA;
+}
+
+.au-achievements__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #323264;
+  margin-bottom: 30px;
+}
+
+.au-achievements__cards {
+  margin: 0 -15px;
+}
+
+.au-achievements__card {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.au-achievements__card_none {
+  display: none;
+}
+
+.au-achievements__item {
+  width: calc(100% - 60px);
+  height: 90px;
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+}
+
+.au-achievements__logo {
+  max-width: 135px;
+}
+
+@media (min-width: 576px) {
+  .au-achievements__card {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .au-achievements__card_none {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }
 

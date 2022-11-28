@@ -1,0 +1,86 @@
+.au-presentation {
+    padding: 30px 0;
+    &__title {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 37px;
+        background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+    &__subtitle {
+        font-size: 19px;
+        line-height: 30px;
+        padding-bottom: 30px;
+    }
+    &__data {
+        border-left: 4px solid #E6E6F0;
+        padding-left: 30px;
+    }
+    &__item {
+        margin-bottom: 40px;
+        &-box {
+            display: flex;
+            align-items: flex-end;
+        }
+        &-logo {
+            background-repeat: no-repeat;
+            background-position: center center;
+            width: 32px;
+            height: 32px;
+            position: relative;
+            margin-bottom: 10px;
+            margin-right: 12px;
+        }
+        &-txt {
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 44px;
+            text-align: center;
+            background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        &-info {
+            font-size: 16px;
+            line-height: 20px;
+            color: #323264;
+        }
+        &-last {
+            margin-bottom: 0;
+        }
+    }
+}
+
+// -------------------------------------------------------------------------------------
+// ----------------------------------------------------------------media 768------------
+// -------------------------------------------------------------------------------------
+
+@media (min-width: 768px) {
+    .au-presentation {
+        padding-bottom: 60px;
+        &__title {
+            font-size: 38px;
+            line-height: 46px;
+        }
+    }
+}
+
+// -------------------------------------------------------------------------------------
+// ----------------------------------------------------------------media 992------------
+// -------------------------------------------------------------------------------------
+
+@media (min-width: 992px) {
+    .au-presentation {
+        display: flex;
+        &__txt {
+            width: 60%;
+            padding-right: 30px;
+        }
+        &__data {
+            width: 40%;
+        }
+    }
+}

@@ -1,0 +1,58 @@
+.au-history {
+    &__section {
+        padding-top: 30px;
+        padding-bottom: 60px;
+    }
+    &__txt {
+        font-size: 19px;
+        line-height: 30px;
+        margin-bottom: 30px;
+    }
+    &__subtitle {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 37px;
+        background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+}
+
+// -------------------------------------------------------------------------------------
+// ----------------------------------------------------------------media 768------------
+// -------------------------------------------------------------------------------------
+
+@media (min-width: 768px) {
+   .au-history {
+        &__section {
+            padding-top: 60px;
+        }
+        &__subtitle {
+            font-size: 38px;
+            line-height: 46px;
+        }
+    }
+}
+
+// -------------------------------------------------------------------------------------
+// ----------------------------------------------------------------media 992------------
+// -------------------------------------------------------------------------------------
+
+@media (min-width: 992px) {
+    .au-history {
+        &__section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        &__txt {
+            padding-right: 60px;
+        }
+        &__subtitle {
+            display: block;
+            width: 410px;
+            height: 138px;
+        }
+    }
+}

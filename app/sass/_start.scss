@@ -4,10 +4,17 @@
 }
 
 .container {
+    max-width: 1080px;
+    min-width: 375px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.container-lg {
     max-width: 1320px;
     min-width: 375px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 30px;
 }
 
 a {
