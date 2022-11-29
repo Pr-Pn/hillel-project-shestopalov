@@ -42,17 +42,15 @@
 @media (min-width: 992px) {
     .au-history {
         &__section {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
+            display: grid;
+            grid-template-columns: 1fr 362px;
         }
         &__txt {
             padding-right: 60px;
         }
         &__subtitle {
             display: block;
-            width: 410px;
-            height: 138px;
+            
         }
     }
 }
