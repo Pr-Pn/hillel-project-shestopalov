@@ -6,10 +6,10 @@
     &__photo {
         background-image: url('../img/man.jpg');
         background-repeat: no-repeat;
-        background-position: center top;
+        background-position: center center;
+        background-size: cover;
         border-radius: 12px 12px 0px 0px;
         height: 500px;
-        width: auto;
     }
     &__info {
         background-color: #F5F5FA;
@@ -54,6 +54,7 @@
             line-height: 20px;
             color: #B3B3BA;
             margin-bottom: 6px;
+            width: 200px;
         }
         &-position {
             font-size: 14px;
@@ -90,9 +91,12 @@
 @media (min-width: 768px) {
     .team {
         padding-top: 80px;
-        &__iinfo {
+        &__info {
             &-txt {
                 line-height: 46px;
+            }
+            &-name {
+                width: auto;
             }
         }
     }
@@ -105,15 +109,29 @@
 @media (min-width: 992px) {
     .team {
         &__box {
-            display: flex;
+            display: grid;
+            grid-template-columns: 400px 1fr;
         }
         &__photo {
-            width: 40%;
             border-radius: 12px 0px 0px 12px;
         }
         &__info {
-            width: 60%;
             border-radius: 0px 12px 12px 0px;
+        }
+    }
+}
+
+// -------------------------------------------------------------------------------------
+// ----------------------------------------------------------------media 992------------
+// -------------------------------------------------------------------------------------
+
+@media (min-width: 992px) {
+    .team {
+        &__photo {
+            height: 344px;
+        }
+        &__info {
+            height: 344px;
         }
     }
 }

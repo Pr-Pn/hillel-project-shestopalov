@@ -1,5 +1,8 @@
 .partners {
     padding-top: 30px;
+    &__section {
+        margin: 0 -15px;
+    }
     &__title {
         font-weight: 700;
         font-size: 14px;
