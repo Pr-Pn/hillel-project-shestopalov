@@ -114,15 +114,14 @@
             fill: #F0145A;
         }
         &::after {
-        content: '';
-        // background-color: rgba(245, 245, 250, 0.2);
-        background-color: #F5F5FA;
-        height: 45px;
-        width: 1000px;
-        position: absolute;
-        top: 0;
-        left: -100px;
-        z-index: -1;
+            content: '';
+            background-color: #F5F5FA;
+            height: 45px;
+            width: 1000px;
+            position: absolute;
+            top: 0;
+            left: -100px;
+            z-index: -1;
         }
     }
 
@@ -141,14 +140,32 @@
             &_d {
                 background-image: url('../img/logo-d.svg');
             }
+            &_au {
+                position: relative;
+                &::after {
+                    content: '';
+                    background-image: url('../img/slash.svg');
+                    background-repeat: no-repeat;
+                    background-position: center top;
+                    margin-right: 4px;
+                    width: 12px;
+                    height: 26px;
+                    position: absolute;
+                    right: -19px;
+                }
+            }
         }
         &-item:hover {
             opacity: 0.5;
         }
         &-page {
+            font-size: 20px;
+            line-height: 24px;
+            color: #323264;
+            margin-left: 20px;
+        }
 
-        }
-        }
+    }
     &__menu {
         display: flex;
         align-items: center;
@@ -168,9 +185,6 @@
         &-btn:hover {
             background-color: #E6E6F0;
             border-radius: 8px;
-        }
-        &-nav {
-
         }
         &-link {
             font-weight: 700;
@@ -195,9 +209,9 @@
             text-align: right;
             color: #F0145A;
             border-bottom: 2px solid #F0145A;
-            // &:hover {
-            //     color: #24A3FF;
-            // }
+            &:hover {
+                color: #F0145A;
+            }
         }
     }
 }
@@ -317,6 +331,17 @@
             &-item {
                 width: 130px;
                 height: 60px;
+                &_au::after {
+                    width: 21px;
+                    height: 47px;
+                    background-size: cover;
+                    right: -30px;
+                }
+            }
+            &-page {
+                font-size: 36px;
+                line-height: 44px;
+                margin-left: 30px;
             }
         }
         &__menu {

@@ -40,6 +40,9 @@
         list-style: none;
         padding-left: 0;
         &-item {
+            &:hover {
+                opacity: 0.5;
+            }
             font-size: 0;
             cursor: pointer;
             width: 16px;
@@ -51,6 +54,9 @@
             margin: 0 7.5px;
             &_active {
                 opacity: 1;
+                &:hover {
+                    opacity: 1;
+                }
             }
         }
     }

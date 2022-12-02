@@ -224,8 +224,31 @@ a {
   background-image: url("../img/logo-d.svg");
 }
 
+.header__logo-item_au {
+  position: relative;
+}
+
+.header__logo-item_au::after {
+  content: '';
+  background-image: url("../img/slash.svg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  margin-right: 4px;
+  width: 12px;
+  height: 26px;
+  position: absolute;
+  right: -19px;
+}
+
 .header__logo-item:hover {
   opacity: 0.5;
+}
+
+.header__logo-page {
+  font-size: 20px;
+  line-height: 24px;
+  color: #323264;
+  margin-left: 20px;
 }
 
 .header__menu {
@@ -284,6 +307,10 @@ a {
   text-align: right;
   color: #F0145A;
   border-bottom: 2px solid #F0145A;
+}
+
+.header__menu_active:hover {
+  color: #F0145A;
 }
 
 .down {
@@ -414,6 +441,17 @@ a {
   .header__logo-item {
     width: 130px;
     height: 60px;
+  }
+  .header__logo-item_au::after {
+    width: 21px;
+    height: 47px;
+    background-size: cover;
+    right: -30px;
+  }
+  .header__logo-page {
+    font-size: 36px;
+    line-height: 44px;
+    margin-left: 30px;
   }
   .header__menu-btn {
     display: none;
@@ -1396,6 +1434,7 @@ a {
 }
 
 .au-photo__section {
+  margin: 0 auto;
   display: block;
   background-image: url("../img/au-photo-s.jpg");
   background-repeat: no-repeat;
@@ -1422,10 +1461,16 @@ a {
   top: calc(50% - 44px/2 - 0.03px);
 }
 
+@media (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) and (min-resolution: 1.5dppx) {
+  .au-photo__section {
+    background-image: url("../img/au-photo-s@2x.jpg");
+  }
+}
+
 @media (min-width: 768px) {
   .au-photo__section {
     height: 233px;
-    background-size: cover 233px;
+    background-size: cover;
   }
   .au-photo__txt {
     font-size: 46px;
@@ -1441,8 +1486,8 @@ a {
 @media (min-width: 992px) {
   .au-photo__section {
     height: 311px;
-    background-size: cover 311px;
-    background-image: url("../img/au-photo.jpg");
+    background-size: cover;
+    background-image: url("../img/au-photo-l.jpg");
   }
   .au-photo__txt {
     font-size: 86px;
@@ -1454,10 +1499,17 @@ a {
   }
 }
 
+@media (min-width: 992px) and (-webkit-min-device-pixel-ratio: 1.5) and (-webkit-min-device-pixel-ratio: 1.5), (min-width: 992px) and (min-resolution: 144dpi) and (min-resolution: 1.5dppx) {
+  .au-photo__section {
+    background-image: url("../img/au-photo-l@2x.jpg");
+  }
+}
+
 @media (min-width: 1200px) {
   .au-photo__section {
+    max-width: 1440px;
     height: 438px;
-    background-size: cover 438px;
+    background-size: cover;
     background-image: url("../img/au-photo-l.jpg");
   }
   .au-photo__txt {
@@ -1587,7 +1639,15 @@ a {
   margin: 0 7.5px;
 }
 
+.au-achievements__scroll-item:hover {
+  opacity: 0.5;
+}
+
 .au-achievements__scroll-item_active {
+  opacity: 1;
+}
+
+.au-achievements__scroll-item_active:hover {
   opacity: 1;
 }
 

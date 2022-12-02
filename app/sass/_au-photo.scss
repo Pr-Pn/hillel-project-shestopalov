@@ -1,5 +1,6 @@
 .au-photo {
     &__section {
+        margin: 0 auto;
         display: block;
         background-image: url('../img/au-photo-s.jpg');
         background-repeat: no-repeat;
@@ -26,6 +27,14 @@
     }
 }
 
+@media (min-resolution: 144dpi) and (min-resolution: 1.5dppx) {
+    .au-photo {
+        &__section {
+            background-image: url('../img/au-photo-s@2x.jpg');
+        }
+    }
+}
+
 // -------------------------------------------------------------------------------------
 // ----------------------------------------------------------------media 768------------
 // -------------------------------------------------------------------------------------
@@ -34,7 +43,7 @@
     .au-photo {
         &__section {
             height: 233px;
-            background-size: cover 233px;
+            background-size: cover;
         }
         &__txt {
             font-size: 46px;
@@ -56,8 +65,8 @@
     .au-photo {
         &__section {
             height: 311px;
-            background-size: cover 311px;
-            background-image: url('../img/au-photo.jpg');
+            background-size: cover;
+            background-image: url('../img/au-photo-l.jpg');
         }
         &__txt {
             font-size: 86px;
@@ -70,6 +79,14 @@
     }
 }
 
+@media (min-width: 992px) and (min-resolution: 144dpi) and (min-resolution: 1.5dppx) {
+    .au-photo {
+        &__section {
+            background-image: url('../img/au-photo-l@2x.jpg');
+        }
+    }
+}
+
 // -------------------------------------------------------------------------------------
 // ----------------------------------------------------------------media 1200------------
 // -------------------------------------------------------------------------------------
@@ -77,8 +94,9 @@
 @media (min-width: 1200px) {
     .au-photo {
         &__section {
+            max-width: 1440px;
             height: 438px;
-            background-size: cover 438px;
+            background-size: cover;
             background-image: url('../img/au-photo-l.jpg');
         }
         &__txt {
