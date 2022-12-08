@@ -62,9 +62,11 @@
 // -------------------------------------------------------------------------------------
 
 @media (min-width: 768px) {
-
     .presentation {
         padding-bottom: 60px;
+        &__list {
+            padding-bottom: 28px;
+        }
         &__item {
             font-size: 38px;
             line-height: 46px;
@@ -72,8 +74,10 @@
         &__content-title {
             font-size: 30px;
             line-height: 37px;
+            padding-top: 60px;
         }
         &__content-subtitle {
+            width: 600px;
             font-size: 19px;
             line-height: 30px;
         }

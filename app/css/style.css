@@ -518,10 +518,13 @@ a {
     margin-right: 15px;
   }
   .down {
+    padding-top: 272px;
     padding-bottom: 90px;
   }
   .down__txt {
-    width: 100%;
+    width: 800px;
+    margin-left: -76px;
+    margin-bottom: 416px;
   }
 }
 
@@ -606,7 +609,7 @@ a {
   letter-spacing: 1px;
   text-transform: uppercase;
   color: #24A3FF;
-  margin-top: 10px;
+  margin-top: 6px;
 }
 
 .footer__adress-lnk:hover {
@@ -737,8 +740,8 @@ a {
     background-color: #E6E6F0;
     border-radius: 50%;
     position: absolute;
-    left: 35px;
-    top: 12px;
+    left: 50px;
+    top: 17px;
   }
   .footer__contacts-mail {
     margin-top: 0;
@@ -750,8 +753,8 @@ a {
     background-color: #E6E6F0;
     border-radius: 50%;
     position: absolute;
-    left: 164px;
-    top: 12px;
+    left: 178px;
+    top: 17px;
   }
   .footer__copy {
     -webkit-box-orient: horizontal;
@@ -871,6 +874,9 @@ a {
   .presentation {
     padding-bottom: 60px;
   }
+  .presentation__list {
+    padding-bottom: 28px;
+  }
   .presentation__item {
     font-size: 38px;
     line-height: 46px;
@@ -878,8 +884,10 @@ a {
   .presentation__content-title {
     font-size: 30px;
     line-height: 37px;
+    padding-top: 60px;
   }
   .presentation__content-subtitle {
+    width: 600px;
     font-size: 19px;
     line-height: 30px;
   }
@@ -1007,17 +1015,22 @@ a {
 
 @media (min-width: 768px) {
   .services__title {
+    font-size: 38px;
+    line-height: 46px;
     margin-bottom: 60px;
   }
   .services__box {
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    margin: 0 -30px;
   }
   .services__wrapper {
     width: 50%;
+    padding: 0 30px;
   }
 }
 
@@ -1032,7 +1045,7 @@ a {
 }
 
 .team__box {
-  padding-bottom: 30px;
+  padding-bottom: 24px;
 }
 
 .team__photo {
@@ -1084,6 +1097,7 @@ a {
   background-clip: text;
   margin-bottom: 30px;
   margin-top: 5px;
+  width: 250px;
 }
 
 .team__info-name {
@@ -1272,7 +1286,8 @@ a {
 }
 
 .publication {
-  padding: 30px 0;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .publication__section {
@@ -1300,7 +1315,7 @@ a {
   background-repeat: no-repeat;
   background-position: center center;
   position: absolute;
-  right: -6px;
+  right: -10px;
   top: 4px;
 }
 
@@ -1312,12 +1327,15 @@ a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  margin-bottom: 30px;
+  margin-bottom: 33px;
 }
 
 .publication__card {
-  padding: 0 15px;
   margin-bottom: 30px;
+}
+
+.publication__card_last {
+  margin-bottom: 0;
 }
 
 .publication__item {
@@ -1329,7 +1347,7 @@ a {
 .publication__item img {
   height: 200px;
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 26px;
 }
 
 .publication__item-retreat {
@@ -1359,7 +1377,7 @@ a {
 .publication__item-subtitle {
   font-size: 14px;
   line-height: 22px;
-  width: 225px;
+  width: 243px;
 }
 
 @media (min-width: 768px) {
@@ -1376,6 +1394,7 @@ a {
     margin: 0 -15px;
   }
   .publication__card {
+    padding: 0 15px;
     width: 50%;
   }
   .publication__card_last {

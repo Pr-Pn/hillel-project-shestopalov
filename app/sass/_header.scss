@@ -406,9 +406,12 @@
     }
 
     .down {
+        padding-top: 272px;
         padding-bottom: 90px;
         &__txt {
-            width: 100%;
+            width: 800px;
+            margin-left: -76px;
+            margin-bottom: 416px;
         }
     }
 
