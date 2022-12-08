@@ -35,8 +35,7 @@
                         <div class="header__logo-page"></div>
                     </div>
                     <div class="header__menu">
-                        <button class="header__menu-btn header__menu-btn_d header__menu-btn_current"></button>
-
+                        <button class="header__menu-btn header__menu-btn_d header__menu-btn_current" id="brg"></button>
                         <div class="header__menu-nav">
                             <a class="header__menu-link header__menu-link_d header__menu_active" href="./about-us.html">about us</a>
                             <a class="header__menu-link header__menu-link_d" href="#">services</a>
@@ -45,14 +44,14 @@
                             <a class="header__menu-link header__menu-link_d" href="#">contact</a>
                         </div>
                     </div>
-                    <div class="header__menu-window header__menu-window_d">
+                    <label class="header__menu-window header__menu-window_d" for="brg">
                         <a class="header__menu-window-link header__menu-window-link_d" href="./about-us.html">about us</a>
                         <a class="header__menu-window-link header__menu-window-link_d" href="#">послуги</a>
                         <a class="header__menu-window-link header__menu-window-link_d" href="#">команда</a>
                         <a class="header__menu-window-link header__menu-window-link_d header__menu-window-link_active"
                             href="#">публікації</a>
                         <a class="header__menu-window-link header__menu-window-link_d" href="#">контакти</a>
-                    </div>
+                    </label>
                 </section>
             </div>
         </header>
@@ -570,5 +569,22 @@
             </section>
         </div>
     </footer>
+    <section class="model">
+        <div class="model__window">
+            <h2 class="model__title">We would like to help you</h2>
+            <form action="https://fom.in.ua/echo">
+                <label>
+                    <p><input class="model__item" type="text" name="name" placeholder="Name" required></p>
+                    <!-- <p><textarea class="model__item-message" name="message" placeholder="Message"></textarea></p> -->
+                    <p><input class="model__item-message" type="text" name="message" placeholder="Message"></p>
+                    <p class="model__subtitle">How to answer you?</p>
+                    <p><input class="model__item" type="tel" name="tel" placeholder="Phone number" required></p>
+                    <p><input class="model__item" type="email" name="e-mail" placeholder="Email" required></p>
+                    <p><button class="model__btn" type="submit">Send message</button></p>
+                </label>
+            </form>
+            <button class="model__close" type="button"></button>
+        </div>
+    </section>
 </body>
 </html>
