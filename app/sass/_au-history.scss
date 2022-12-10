@@ -7,6 +7,12 @@
         font-size: 19px;
         line-height: 30px;
         margin-bottom: 30px;
+        &-1 {
+                margin-bottom: 20px;
+            }
+        &-2 {
+                margin-bottom: 20px;
+            }
     }
     &__subtitle {
         font-weight: 700;
@@ -28,9 +34,13 @@
         &__section {
             padding-top: 60px;
         }
+        &__txt {
+            width: 645px;
+        }
         &__subtitle {
             font-size: 38px;
             line-height: 46px;
+            width: 600px;
         }
     }
 }
@@ -43,14 +53,19 @@
     .au-history {
         &__section {
             display: grid;
-            grid-template-columns: 1fr 362px;
+            grid-template-columns: 1fr 360px;
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-bottom: 32px;
         }
         &__txt {
             padding-right: 60px;
+            width: auto;
         }
+        
         &__subtitle {
             display: block;
-            
+            width: 365px;
         }
     }
 }

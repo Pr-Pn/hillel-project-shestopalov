@@ -537,9 +537,12 @@ a {
     grid-template-columns: max-content 1fr;
     grid-template-rows: repeat(2, -webkit-min-content);
     grid-template-rows: repeat(2, min-content);
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 50px;
   }
   .header__info {
-    grid-row: 1 / -1;
+    grid-row: 1 / 2;
     grid-column: 2 / 3;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
@@ -548,7 +551,8 @@ a {
     padding-bottom: 18px;
   }
   .header__logo {
-    padding-top: 50px;
+    padding-top: 0;
+    padding-bottom: 0;
     grid-row: 1 / -1;
   }
   .header__logo-item {
@@ -558,7 +562,17 @@ a {
     grid-row: 2 / 3;
     grid-column: 2 / 3;
     justify-self: end;
-    padding-bottom: 38px;
+  }
+  .header__menu-link {
+    margin-right: 0;
+    margin-left: 15px;
+  }
+  .down {
+    padding-top: 246px;
+  }
+  .down__txt {
+    margin-left: 0;
+    margin-bottom: 290px;
   }
 }
 
@@ -775,10 +789,15 @@ a {
     grid-template-rows: repeat(2, -webkit-min-content);
     grid-template-rows: repeat(2, min-content);
     width: auto;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   .footer__adress {
     grid-row: 1 / 2;
     grid-column: 1 / 2;
+  }
+  .footer__adress-lnk {
+    margin-top: -5px;
   }
   .footer__contacts {
     grid-row: 2 / 3;
@@ -791,6 +810,9 @@ a {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
   }
 }
 
@@ -895,12 +917,18 @@ a {
 
 @media (min-width: 992px) {
   .presentation {
+    display: grid;
+    grid-template-columns: 375px 1fr;
+    grid-template-rows: 307px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 57px;
+  }
+  .presentation__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-  }
-  .presentation__list {
-    width: 40%;
+    margin-top: 15px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -909,14 +937,21 @@ a {
         -ms-flex-align: end;
             align-items: flex-end;
   }
+  .presentation__item {
+    margin-bottom: 27px;
+  }
   .presentation__content.active {
-    width: 60%;
     border-top: none;
     padding-left: 60px;
+    margin-left: 60px;
     border-left: 4px solid rgba(255, 255, 255, 0.3);
   }
   .presentation__content-title {
+    margin-top: 10px;
     padding-top: 0;
+  }
+  .presentation__content-subtitle {
+    width: 100%;
   }
 }
 
@@ -1014,6 +1049,9 @@ a {
 }
 
 @media (min-width: 768px) {
+  .services {
+    padding-bottom: 0;
+  }
   .services__title {
     font-size: 38px;
     line-height: 46px;
@@ -1032,9 +1070,19 @@ a {
     width: 50%;
     padding: 0 30px;
   }
+  .services__item {
+    padding-bottom: 60px;
+  }
 }
 
 @media (min-width: 992px) {
+  .services {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .services__box {
+    width: auto;
+  }
   .services__wrapper {
     width: 33.333%;
   }
@@ -1147,6 +1195,8 @@ a {
     padding-top: 80px;
   }
   .team__info-txt {
+    font-size: 38px;
+    line-height: 46px;
     line-height: 46px;
   }
   .team__info-name {
@@ -1155,24 +1205,23 @@ a {
 }
 
 @media (min-width: 992px) {
+  .team {
+    padding: 80px 15px 0;
+  }
   .team__box {
     display: grid;
     grid-template-columns: 400px 1fr;
   }
   .team__photo {
+    height: 100%;
     border-radius: 12px 0px 0px 12px;
   }
   .team__info {
+    height: 100%;
     border-radius: 0px 12px 12px 0px;
   }
-}
-
-@media (min-width: 992px) {
-  .team__photo {
-    height: 344px;
-  }
-  .team__info {
-    height: 344px;
+  .team__info-txt {
+    width: 94%;
   }
 }
 
@@ -1280,6 +1329,10 @@ a {
 }
 
 @media (min-width: 992px) {
+  .partners {
+    padding-top: 60px;
+    margin: 0 -15px;
+  }
   .partners__list {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -1413,10 +1466,24 @@ a {
 
 @media (min-width: 992px) {
   .publication {
+    padding-top: 28px;
     padding-bottom: 0;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .publication__title {
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  .publication__box {
+    padding-bottom: 30px;
   }
   .publication__card {
     width: 33.333%;
+    margin-bottom: 0;
+  }
+  .publication__item-subtitle {
+    width: 225px;
   }
 }
 
@@ -1432,6 +1499,7 @@ a {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  margin-bottom: 30px;
 }
 
 .au-presentation__subtitle {
@@ -1440,13 +1508,14 @@ a {
   padding-bottom: 30px;
 }
 
-.au-presentation__data {
-  border-left: 4px solid #E6E6F0;
-  padding-left: 30px;
+.au-presentation__subtitle-1 {
+  margin-bottom: 20px;
 }
 
 .au-presentation__item {
-  margin-bottom: 40px;
+  border-left: 4px solid #E6E6F0;
+  padding-left: 30px;
+  padding-bottom: 39px;
 }
 
 .au-presentation__item-box {
@@ -1484,27 +1553,37 @@ a {
   margin-top: 10px;
 }
 
-.au-presentation__item-last {
+.au-presentation__item_last {
   margin-bottom: 0;
 }
 
 @media (min-width: 768px) {
   .au-presentation {
+    padding-top: 62px;
     padding-bottom: 60px;
   }
   .au-presentation__title {
     font-size: 38px;
     line-height: 46px;
   }
+  .au-presentation__subtitle {
+    width: 650px;
+  }
 }
 
 @media (min-width: 992px) {
   .au-presentation {
+    padding-bottom: 27px;
+    padding-left: 15px;
+    padding-right: 15px;
     display: grid;
-    grid-template-columns: 1fr 362px;
+    grid-template-columns: 1fr 388px;
   }
   .au-presentation__txt {
     padding-right: 30px;
+  }
+  .au-presentation__subtitle {
+    width: auto;
   }
 }
 
@@ -1609,6 +1688,14 @@ a {
   margin-bottom: 30px;
 }
 
+.au-history__txt-1 {
+  margin-bottom: 20px;
+}
+
+.au-history__txt-2 {
+  margin-bottom: 20px;
+}
+
 .au-history__subtitle {
   font-weight: 700;
   font-size: 30px;
@@ -1623,22 +1710,31 @@ a {
   .au-history__section {
     padding-top: 60px;
   }
+  .au-history__txt {
+    width: 645px;
+  }
   .au-history__subtitle {
     font-size: 38px;
     line-height: 46px;
+    width: 600px;
   }
 }
 
 @media (min-width: 992px) {
   .au-history__section {
     display: grid;
-    grid-template-columns: 1fr 362px;
+    grid-template-columns: 1fr 360px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 32px;
   }
   .au-history__txt {
     padding-right: 60px;
+    width: auto;
   }
   .au-history__subtitle {
     display: block;
+    width: 365px;
   }
 }
 
@@ -1664,11 +1760,13 @@ a {
 
 .au-achievements__cards {
   margin: 0 -15px;
+  padding-bottom: 23px;
 }
 
 .au-achievements__card {
   display: grid;
   grid-template-columns: 1fr;
+  grid-template-rows: 90px;
 }
 
 .au-achievements__card_none {
@@ -1676,7 +1774,7 @@ a {
 }
 
 .au-achievements__item {
-  width: calc(100% - 60px);
+  width: calc(100% - 50px);
   height: 90px;
   background-color: #fff;
   display: -webkit-box;
@@ -1745,11 +1843,26 @@ a {
 }
 
 @media (min-width: 768px) {
+  .au-achievements {
+    margin: 0 -15px;
+  }
   .au-achievements__cards {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
   .au-achievements__scroll-item_none {
     display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .au-achievements__title {
+    margin-bottom: 40px;
+  }
+  .au-achievements__cards {
+    padding-bottom: 11px;
+  }
+  .au-achievements__card {
+    grid-template-rows: 110px;
   }
 }
 

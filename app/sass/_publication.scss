@@ -121,9 +121,25 @@
 
 @media (min-width: 992px) {
     .publication {
+        padding-top: 28px;
         padding-bottom: 0;
+        padding-right: 15px;
+        padding-left: 15px;
+        &__title {
+            margin-top: 10px;
+            margin-bottom: 30px;
+        }
+        &__box {
+            padding-bottom: 30px;
+        }
         &__card {
             width: 33.333%;
+            margin-bottom: 0;
+        }
+        &__item {
+            &-subtitle {
+                width: 225px;
+            }
         }
     }
 }

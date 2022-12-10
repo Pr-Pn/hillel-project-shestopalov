@@ -90,20 +90,36 @@
 
 @media (min-width: 992px) {
     .presentation {
-        display: flex;
+        display: grid;
+        grid-template-columns: 375px 1fr;
+        grid-template-rows: 307px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 57px;
         &__list {
-            width: 40%;
+            display: flex;
+            margin-top: 15px;
             flex-direction: column;
             align-items: flex-end;
+
+        }
+        &__item {
+            margin-bottom: 27px;
         }
         &__content.active {
-            width: 60%;
             border-top: none;
             padding-left: 60px;
+            margin-left: 60px;
             border-left: 4px solid rgba(255, 255, 255, 0.3);
         }
-        &__content-title {
-            padding-top: 0;
+        &__content {
+            &-title {
+                margin-top: 10px;
+                padding-top: 0;
+            }
+            &-subtitle {
+                width: 100%;
+            }
         }
     }
 }

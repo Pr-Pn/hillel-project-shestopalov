@@ -94,6 +94,8 @@
         padding-top: 80px;
         &__info {
             &-txt {
+                font-size: 38px;
+                line-height: 46px;
                 line-height: 46px;
             }
             &-name {
@@ -109,30 +111,23 @@
 
 @media (min-width: 992px) {
     .team {
+        padding: 80px 15px 0;
         &__box {
             display: grid;
             grid-template-columns: 400px 1fr;
         }
         &__photo {
+            height: 100%;
             border-radius: 12px 0px 0px 12px;
         }
         &__info {
+            height: 100%;
             border-radius: 0px 12px 12px 0px;
+            &-txt {
+                width: 94%;
+            }
         }
     }
 }
 
-// -------------------------------------------------------------------------------------
-// ----------------------------------------------------------------media 992------------
-// -------------------------------------------------------------------------------------
 
-@media (min-width: 992px) {
-    .team {
-        &__photo {
-            height: 344px;
-        }
-        &__info {
-            height: 344px;
-        }
-    }
-}

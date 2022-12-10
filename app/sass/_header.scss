@@ -430,16 +430,20 @@
         &__section {
             grid-template-columns: max-content 1fr;
             grid-template-rows: repeat(2, min-content);
+            padding-right: 15px;
+            padding-left: 15px;
+            padding-top: 50px;
         }
         &__info {
-            grid-row: 1 / -1;
+            grid-row: 1 / 2;
             grid-column: 2 / 3;
             justify-content: flex-end;
             padding-top: 0;
             padding-bottom: 18px;
         }
         &__logo {
-            padding-top: 50px;
+            padding-top: 0;
+            padding-bottom: 0;
             grid-row: 1 / -1;
             &-item {
                 width: 130px;
@@ -449,10 +453,19 @@
             grid-row: 2 / 3;
             grid-column: 2 / 3;
             justify-self: end;
-            padding-bottom: 38px;
+            &-link {
+                margin-right: 0;
+                margin-left: 15px;
+            }
         }
     }
-
+    .down {
+        padding-top: 246px;
+        &__txt {
+            margin-left: 0;
+            margin-bottom: 290px;
+        }
+    }
 }
 
 

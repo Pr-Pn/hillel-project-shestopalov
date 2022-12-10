@@ -16,16 +16,18 @@
     }
     &__cards {
         margin: 0 -15px;
+        padding-bottom: 23px;
     }
     &__card {
         display: grid;
         grid-template-columns: 1fr;
+        grid-template-rows: 90px;
         &_none {
             display: none;
         }
     }
     &__item {
-        width: calc(100% - 60px);
+        width: calc(100% - 50px);
         height: 90px;
         background-color: #fff;
         display: flex;
@@ -93,6 +95,7 @@
 
 @media (min-width: 768px) {
     .au-achievements {
+        margin: 0 -15px;
         &__cards {
             grid-template-columns: 1fr 1fr 1fr 1fr;
         }
@@ -102,6 +105,25 @@
                     display: none;
                 }
             }
+        }
+    }
+}
+
+// -------------------------------------------------------------------------------------
+// ----------------------------------------------------------------media 992------------
+// -------------------------------------------------------------------------------------
+
+
+@media (min-width: 992px) {
+    .au-achievements {
+        &__title {
+            margin-bottom: 40px;
+        }
+        &__cards {
+            padding-bottom: 11px;
+        }
+        &__card {
+            grid-template-rows: 110px;
         }
     }
 }

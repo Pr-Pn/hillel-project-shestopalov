@@ -96,6 +96,8 @@
 
 @media (min-width: 992px) {
     .partners {
+        padding-top: 60px;
+        margin: 0 -15px;
         &__list {
             grid-template-columns: repeat(4, 1fr);
         }

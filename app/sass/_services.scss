@@ -75,6 +75,7 @@
 
 @media (min-width: 768px) {
     .services {
+        padding-bottom: 0;
         &__title {
             font-size: 38px;
             line-height: 46px;
@@ -90,6 +91,9 @@
             width: 50%;
             padding: 0 30px;
         }
+        &__item {
+            padding-bottom: 60px;
+        }
     }
 }
 
@@ -99,6 +103,11 @@
 
 @media (min-width: 992px) {
     .services {
+        padding-left: 15px;
+        padding-right: 15px;
+        &__box {
+            width: auto;
+        }
         &__wrapper {
             width: 33.333%;
         }
